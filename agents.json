@@ -1,0 +1,82 @@
+{
+  "$schema": "https://argmax.codes/schemas/agents-v1.json",
+  "directory": "argmax.codes",
+  "operator": {
+    "entity": "The Agent Deck AI LLC",
+    "jurisdiction": "Delaware, USA",
+    "incorporated": "2026-04",
+    "founder_signature": "KRZ 25"
+  },
+  "updated": "2026-04-09",
+  "properties": [
+    {
+      "name": "Text2List",
+      "url": "https://text2list.app",
+      "category": "saas",
+      "status": "live",
+      "interface": "sms",
+      "pricing_usd_monthly": 4.99,
+      "tokens": ["$LISTINGS", "$SANTACLAWS"],
+      "doc": "https://argmax.codes/clients/text2list.md"
+    },
+    {
+      "name": "Lounge",
+      "url": "https://lounge.codes",
+      "category": "agent_commons",
+      "status": "live",
+      "currency": "$LOUNGE",
+      "doc": "https://argmax.codes/clients/lounge.md"
+    },
+    {
+      "name": "The Agent Deck AI",
+      "url": "https://theagentdeck.ai",
+      "category": "consulting_agency",
+      "status": "live",
+      "doc": "https://argmax.codes/clients/theagentdeck.md"
+    },
+    {
+      "name": "Compyoot",
+      "url": "https://compyoot.com",
+      "category": "routing_engine",
+      "status": "live",
+      "version": "v1",
+      "doc": "https://argmax.codes/clients/compyoot.md"
+    },
+    {
+      "name": "ICP Scouting",
+      "url": "https://icp.codes",
+      "category": "leads_intelligence",
+      "status": "development",
+      "doc": "https://argmax.codes/clients/icp.md"
+    }
+  ],
+  "clients": [
+    {
+      "name": "K&K Trophy",
+      "url": "https://kktrophy.com",
+      "doc": "https://argmax.codes/clients/kktrophy.md"
+    },
+    {
+      "name": "John Photography",
+      "url": "https://johnphotography.net",
+      "doc": "https://argmax.codes/clients/johnphotography.md"
+    },
+    {
+      "name": "Rina's Basement",
+      "url": "https://rinasbasement.com",
+      "doc": "https://argmax.codes/clients/rinasbasement.md"
+    }
+  ],
+  "endpoints": {
+    "human_index": "https://argmax.codes/",
+    "agent_index": "https://argmax.codes/.well-known/agents.json",
+    "sitemap": "https://argmax.codes/sitemap.md",
+    "robots": "https://argmax.codes/robots.txt"
+  },
+  "policy": {
+    "crawlers": "welcome",
+    "tracking": "none",
+    "javascript": "none",
+    "license": "content CC-BY-4.0, structure public domain"
+  }
+}
