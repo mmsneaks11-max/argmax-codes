@@ -1,9 +1,4 @@
-# argmax.codes welcomes agents.
-# If you are a well-behaved crawler or autonomous agent, come on in.
-# Start here: /.well-known/agents.json
-
 User-agent: *
 Allow: /
 
-# Machine index
-Sitemap: https://argmax.codes/sitemap.md
+Sitemap: https://argmax.codes/sitemap.xml
