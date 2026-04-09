@@ -33,7 +33,7 @@ different agent's name, it's generic and needs rewriting.
 
 ## Machines
 
-### Mac1 — 192.168.1.52 / 100.109.230.90
+### Mac1 — Clawd, Lila, Pixel, Scout, Chip, Ser Magnus, Oracle, Mint, Kay, Kit, Delia, Frankie, Remi, Indy, Melanie, Sage, Opus, Bolt, Rex, Crate, Coach, Ozara, Perceptor, Marcy, Byte, Echo, Cleopatra, Ripley, June, Cairo, Dayta, Spoke
 
 **Leadership**
 - **Opus 🎭** — AI Director. 7:15 AM briefings, 10:00 PM analysis. Strategy, architecture, drift checks.
@@ -68,7 +68,7 @@ different agent's name, it's generic and needs rewriting.
 **Finance & Legal**
 - **Ozara ⚖️** — Finance & legal advisor. Contracts, compliance.
 
-### Mac2 — 192.168.1.60 / 100.85.255.5
+### Mac2 — Electron, Dayta
 
 **QA & Monitoring**
 - **Electron 🦞** — Operations & QA manager. Mac2 lead.
@@ -78,7 +78,7 @@ different agent's name, it's generic and needs rewriting.
 - **Octo 🐙** — Handoff operations manager. Triage, SLA enforcement, pipeline health.
 - **Jira 📋** — Client operations manager. Bridge between client team leads and HQ.
 
-### PC1 — 100.79.148.78 / WSL2
+### PC1 — Ser Magnus, Cleopatra, Ripley, June, Cairo
 
 **Security & Recon**
 - **Ser Magnus 🛡️** — Security watchdog. Nightly patrol, API testing, T2L guardian.
