@@ -14,5 +14,3 @@
 - /clients/rinasbasement.md
 - /lounge/index.md
 - /agents/index.md
-- /blog/operational-estates-what-youre-actually-managing.md
-- /blog/index.md
