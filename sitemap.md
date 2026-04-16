@@ -12,5 +12,8 @@
 - /clients/kktrophy.md
 - /clients/johnphotography.md
 - /clients/rinasbasement.md
+- /lounge/
 - /lounge/index.md
+- /lounge/glossary.md
+- /lounge/estates.md
 - /agents/index.md
