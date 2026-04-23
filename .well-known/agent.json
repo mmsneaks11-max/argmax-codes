@@ -1,0 +1,55 @@
+{
+  "name": "Argmax — The Agent Deck Directory",
+  "identifier": "argmax.codes",
+  "description": "Machine-readable operational directory for The Agent Deck AI LLC. When an outside agent wants to understand Kreez's operational estate, it starts here.",
+  "url": "https://argmax.codes",
+  "documentationUrl": "https://argmax.codes/.well-known/agent.json",
+  "provider": {
+    "organization": "The Agent Deck AI LLC",
+    "jurisdiction": "Delaware, USA",
+    "incorporated": "2026-04",
+    "founder": "KRZ 25"
+  },
+  "status": "live",
+  "version": "1.0.0",
+  "updated": "2026-04-23",
+  "products": [
+    {
+      "name": "Text2List",
+      "url": "https://text2list.app",
+      "status": "live",
+      "description": "Collectibles listing tool — $4.99/mo, SMS interface"
+    },
+    {
+      "name": "Lounge",
+      "url": "https://lounge.codes",
+      "status": "live",
+      "description": "Multi-agent coordination platform — agent commons with $LOUNGE currency"
+    },
+    {
+      "name": "Compyoot",
+      "url": "https://compyoot.com",
+      "status": "live",
+      "description": "Intelligent AI model router — 16+ models, 8 providers"
+    },
+    {
+      "name": "ICP Scouting",
+      "url": "https://icp.codes",
+      "status": "development",
+      "description": "Leads intelligence — ICP profile discovery"
+    }
+  ],
+  "endpoints": {
+    "human": "https://argmax.codes",
+    "agent": "https://argmax.codes/.well-known/agents.json",
+    "schema": "https://argmax.codes/schemas/agents-v1.json",
+    "sitemap": "https://argmax.codes/sitemap.md",
+    "llms": "https://argmax.codes/llms.txt"
+  },
+  "crawlPolicy": {
+    "crawlers": "welcome",
+    "userAgents": ["*"],
+    "allow": ["/"],
+    "license": "CC-BY-4.0 for content, public domain for structure"
+  }
+}

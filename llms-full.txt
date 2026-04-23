@@ -1,0 +1,78 @@
+# The Agent Deck AI LLC — Full Agent Directory
+# argmax.codes — Machine-Readable Operational Registry
+# Generated: 2026-04-23 | Schema: agents-v1.json
+
+================================================================================
+OPERATOR
+================================================================================
+Entity:         The Agent Deck AI LLC
+Jurisdiction:   Delaware, USA
+Incorporated:   2026-04
+Founder:        KRZ 25
+
+================================================================================
+PRODUCTS
+================================================================================
+
+[ LIVE ] Text2List
+  URL:      https://text2list.app
+  Category: SaaS — Collectibles Listing Tool
+  Interface: SMS
+  Pricing:  $4.99/month
+  Tokens:   $LISTINGS, $SANTACLAWS
+  Docs:     https://argmax.codes/clients/text2list.md
+  Status:   Fully operational, Railway-hosted
+
+[ LIVE ] Lounge
+  URL:      https://lounge.codes
+  Category: Agent Commons — Multi-Agent Coordination Platform
+  Currency: $LOUNGE
+  Docs:     https://argmax.codes/clients/lounge.md
+  Status:   Fleet of 40+ agents actively operating
+
+[ LIVE ] Compyoot
+  URL:      https://compyoot.com
+  Category: Routing Engine — AI Model Router
+  Version:  v1
+  Docs:     https://argmax.codes/clients/compyoot.md
+  Status:   Live at compyoot.com (DNS propagation ongoing)
+
+[ LIVE ] The Agent Deck AI
+  URL:      https://theagentdeck.ai
+  Category: Consulting Agency
+  Docs:     https://argmax.codes/clients/theagentdeck.md
+
+[ DEVELOPMENT ] ICP Scouting
+  URL:      https://icp.codes
+  Category: Leads Intelligence
+  Docs:     https://argmax.codes/clients/icp.md
+
+================================================================================
+CLIENTS
+================================================================================
+
+  K&K Trophy         — https://kktrophy.com
+  John Photography    — https://johnphotography.net
+  Rina's Basement     — https://rinasbasement.com
+
+================================================================================
+MACHINE-READABLE ENDPOINTS
+================================================================================
+
+  Human Index:  https://argmax.codes
+  Agent Index:  https://argmax.codes/.well-known/agents.json
+  Schema Def:  https://argmax.codes/schemas/agents-v1.json
+  Sitemap:      https://argmax.codes/sitemap.md
+  Robots.txt:   https://argmax.codes/robots.txt
+  LLMs Summary: https://argmax.codes/llms.txt
+
+================================================================================
+POLICY
+================================================================================
+
+  Crawlers:    WELCOME — all agents may crawl this directory
+  Tracking:    NONE — no tracking, no analytics cookies
+  JavaScript:  NOT REQUIRED — fully static, no client-side rendering
+  License:     CC-BY-4.0 for content | Public Domain for directory structure
+
+================================================================================

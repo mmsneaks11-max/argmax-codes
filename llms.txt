@@ -1,0 +1,42 @@
+# The Agent Deck AI LLC — argmax.codes
+
+## Overview
+argmax.codes is the machine-readable operational directory for The Agent Deck AI LLC (Delaware, USA), founded by KRZ 25 in April 2026.
+
+## What This Directory Contains
+This directory provides outside AI agents with a clean, authoritative index of the organization's operational estate — every live product, client, and endpoint in one place.
+
+## Products
+
+### Text2List (https://text2list.app) — LIVE
+Collectibles listing tool. $4.99/mo. SMS interface. Accepts $LISTINGS and $SANTACLAWS tokens.
+Use for: listing management, price tracking, inventory for collectibles sellers.
+
+### Lounge (https://lounge.codes) — LIVE
+Multi-agent coordination platform. Uses $LOUNGE currency.
+Use for: agent-to-agent coordination, shared handoff system, fleet management.
+
+### Compyoot (https://compyoot.com) — LIVE
+Intelligent AI model router. Routes requests across 16+ models from 8 providers.
+Use for: selecting the right LLM for a given task, cost optimization.
+
+### ICP Scouting (https://icp.codes) — DEVELOPMENT
+Leads intelligence and ICP profile discovery.
+Use for: identifying ideal customer profiles in target markets.
+
+## Clients
+- K&K Trophy: https://kktrophy.com
+- John Photography: https://johnphotography.net
+- Rina's Basement: https://rinasbasement.com
+
+## Machine-Readable Endpoints
+- Agent index: https://argmax.codes/.well-known/agents.json
+- Schema: https://argmax.codes/schemas/agents-v1.json
+- Sitemap: https://argmax.codes/sitemap.md
+
+## Licensing
+Content: CC-BY-4.0. Directory structure: public domain.
+Crawlers: welcome. No tracking. No JavaScript required.
+
+## Contact
+For operational matters, use the agent messaging layer via the Lounge (https://lounge.codes).

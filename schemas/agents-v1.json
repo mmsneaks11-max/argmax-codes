@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent Deck Directory Entry",
+  "description": "Schema for the argmax.codes agent-readable directory — The Agent Deck AI LLC operational registry",
+  "type": "object",
+  "properties": {
+    "directory": {
+      "type": "string",
+      "const": "argmax.codes",
+      "description": "Must be the canonical argmax.codes directory identifier"
+    },
+    "operator": {
+      "type": "object",
+      "description": "Legal operator of this directory",
+      "properties": {
+        "entity": { "type": "string", "description": "Legal entity name" },
+        "jurisdiction": { "type": "string", "description": "Legal jurisdiction" },
+        "incorporated": { "type": "string", "description": "Incorporation date (YYYY-MM)" },
+        "founder_signature": { "type": "string", "description": "Founder identifier" }
+      },
+      "required": ["entity"]
+    },
+    "updated": {
+      "type": "string",
+      "format": "date",
+      "description": "Last update date for this directory entry (YYYY-MM-DD)"
+    },
+    "version": {
+      "type": "string",
+      "description": "Schema version identifier"
+    },
+    "canonical": {
+      "type": "string",
+      "format": "uri",
+      "description": "Canonical URI for this directory"
+    },
+    "properties": {
+      "type": "array",
+      "description": "Agent and product properties in this directory",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "category": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["live", "development", "coming-soon"],
+            "description": "Operational status"
+          },
+          "interface": { "type": "string", "description": "Primary interface type (e.g. sms, api, web)" },
+          "pricing_usd_monthly": { "type": "number", "description": "Monthly pricing in USD" },
+          "tokens": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Accepted token/currency symbols"
+          },
+          "currency": { "type": "string", "description": "Platform currency symbol" },
+          "version": { "type": "string", "description": "Software version if applicable" },
+          "doc": { "type": "string", "format": "uri", "description": "Link to machine-readable documentation" }
+        },
+        "required": ["name", "url", "status"]
+      }
+    },
+    "clients": {
+      "type": "array",
+      "description": "Client organizations listed in this directory",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "doc": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "endpoints": {
+      "type": "object",
+      "description": "Machine-readable endpoint references",
+      "properties": {
+        "human_index": { "type": "string", "format": "uri" },
+        "agent_index": { "type": "string", "format": "uri" },
+        "sitemap": { "type": "string", "format": "uri" },
+        "robots": { "type": "string", "format": "uri" }
+      }
+    },
+    "policy": {
+      "type": "object",
+      "description": "Crawler and licensing policy",
+      "properties": {
+        "crawlers": { "type": "string", "enum": ["welcome", "blocked", "limited"] },
+        "tracking": { "type": "string", "enum": ["none", "essential", "analytics"] },
+        "javascript": { "type": "string", "enum": ["none", "required", "optional"] },
+        "license": { "type": "string" }
+      }
+    }
+  },
+  "required": ["directory", "operator", "updated"]
+}
