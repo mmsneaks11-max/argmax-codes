@@ -9,6 +9,7 @@
 - /clients/theagentdeck.md
 - /clients/compyoot.md
 - /clients/icp.md
+- /clients/airlock.md
 - /clients/kktrophy.md
 - /clients/johnphotography.md
 - /clients/rinasbasement.md

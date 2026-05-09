@@ -20,6 +20,12 @@ Use for: agent-to-agent coordination, shared handoff system, fleet management.
 Intelligent AI model router. Routes requests across 16+ models from 8 providers.
 Use for: selecting the right LLM for a given task, cost optimization.
 
+### AirLock (https://airlock.codes) — LIVE
+Agent-safe web content protocol. External pages enter as raw HTML, exit as
+bounded evidence packets tagged `instruction_authority: none`.
+Use for: protecting agents from prompt injection, credential harvesting, and
+malicious web content.
+
 ### ICP Scouting (https://icp.codes) — DEVELOPMENT
 Leads intelligence and ICP profile discovery.
 Use for: identifying ideal customer profiles in target markets.

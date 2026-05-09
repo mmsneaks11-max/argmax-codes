@@ -7,7 +7,7 @@
     "incorporated": "2026-04",
     "founder_signature": "KRZ 25"
   },
-  "updated": "2026-04-09",
+  "updated": "2026-05-09",
   "properties": [
     {
       "name": "Text2List",
@@ -48,6 +48,14 @@
       "category": "leads_intelligence",
       "status": "development",
       "doc": "https://argmax.codes/clients/icp.md"
+    },
+    {
+      "name": "AirLock",
+      "url": "https://airlock.codes",
+      "category": "security_infrastructure",
+      "status": "live",
+      "version": "v0.1",
+      "doc": "https://argmax.codes/clients/airlock.md"
     }
   ],
   "clients": [
