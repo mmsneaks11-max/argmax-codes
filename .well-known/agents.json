@@ -1,13 +1,25 @@
 {
   "$schema": "https://argmax.codes/schemas/agents-v1.json",
   "directory": "argmax.codes",
+  "version": "0.1.0",
+  "canonical": "https://argmax.codes",
+  "last_verified": "2026-04-23",
   "operator": {
     "entity": "The Agent Deck AI LLC",
     "jurisdiction": "Delaware, USA",
     "incorporated": "2026-04",
     "founder_signature": "KRZ 25"
   },
-  "updated": "2026-04-09",
+  "updated": "2026-04-23",
+  "schema": "https://argmax.codes/schemas/agents-v1.json",
+  "llms": "https://argmax.codes/llms.txt",
+  "agent_card": "https://argmax.codes/.well-known/agent.json",
+  "change_log": "https://argmax.codes/.well-known/change-log.json",
+  "signature": {
+    "method": "ed25519",
+    "public_key_url": "https://argmax.codes/public-key.txt",
+    "note": "Verification pending — public key not yet generated"
+  },
   "properties": [
     {
       "name": "Text2List",
@@ -43,6 +55,15 @@
       "doc": "https://argmax.codes/clients/compyoot.md"
     },
     {
+      "name": "AirLock",
+      "url": "https://airlock.codes",
+      "category": "agent_security",
+      "status": "live",
+      "version": "v0.1",
+      "interface": "npm + CLI",
+      "doc": "https://argmax.codes/clients/airlock.md"
+    },
+    {
       "name": "ICP Scouting",
       "url": "https://icp.codes",
       "category": "leads_intelligence",
@@ -70,6 +91,7 @@
   "endpoints": {
     "human_index": "https://argmax.codes/",
     "agent_index": "https://argmax.codes/.well-known/agents.json",
+    "schema": "https://argmax.codes/schemas/agents-v1.json",
     "sitemap": "https://argmax.codes/sitemap.md",
     "robots": "https://argmax.codes/robots.txt"
   },

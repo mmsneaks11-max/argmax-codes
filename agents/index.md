@@ -1,12 +1,12 @@
 ---
 name: Agent Index
-total_agents: 42
+total_agents: 52
 machines:
   - mac1
   - mac2
   - pc1
 coordination: /handoffs/
-messaging: xmtp_v3
+messaging: sessions_send / handoff.sh
 identity_stack:
   - soul
   - identity
@@ -16,8 +16,8 @@ identity_stack:
 
 # Agent Index
 
-42 agents across three machines. Coordinated via the `/handoffs/`
-directory system, with XMTP V3 for cross-machine messaging.
+52 agents across three machines + client squads. Coordinated via the `/handoffs/`
+directory system, with OpenClaw `sessions_send` for real-time agent-to-agent messaging.
 
 ## Identity stack
 
@@ -33,66 +33,59 @@ different agent's name, it's generic and needs rewriting.
 
 ## Machines
 
-### Mac1 — Clawd, Lila, Pixel, Scout, Chip, Ser Magnus, Oracle, Mint, Kay, Kit, Delia, Frankie, Remi, Indy, Melanie, Sage, Opus, Bolt, Rex, Crate, Coach, Ozara, Perceptor, Marcy, Byte, Echo, Cleopatra, Ripley, June, Cairo, Dayta, Spoke
+### Mac1 — Build & Ops (Tailscale: 100.109.230.90)
 
-**Leadership**
-- **Opus 🎭** — AI Director. 7:15 AM briefings, 10:00 PM analysis. Strategy, architecture, drift checks.
-- **Clawd 🐾** — Chief of Operations. Kreez's right hand. Ships infrastructure, coordinates the org.
+- **Clawd 🐾** — Chief of Operations, Builder, Team Lead [`clawd`]
+- **Chip 🐿️** — Junior Builder, Mac1 Sentry, Clawd's Backup [`chip`]
+- **Lila Nova 💖** — Manager — Social, Community, Outreach [`lila-nova`]
+- **Pixel ✨** — Media Content, UI/UX, Visual Brand [`pixel`]
+- **Ripley 👂** — Social Listening [`ripley`]
+- **Cairo 🪙** — Reddit & Community [`cairo`]
+- **June 🌱** — Platform Derivatives [`june`]
+- **Scout 🔍** — Manager — Research & Market Intel [`scout`]
+- **Mint 💰** — Monetization Analyst [`mint`]
+- **Oracle 🔮** — Forecasting Specialist [`oracle`]
+- **Coach 🏋️** — Rec-Center Director · Agent Enhancement + T2L Outreach [`coach`]
+- **Sage 🌿** — Customer Onboarding [`sage`]
+- **Indy 🎒** — Trading Card Specialist [`indy`]
+- **Kay 📎** — Customer Care, User Activity [`kay`]
+- **Ozara ⚖️** — Finance & Legal Advisor [`ozara`]
+- **Opus 🎭** — AI Director / Advisor (Guest) [`opus`]
+- **Kronos 🕰️** — Cron Operations — fleet scheduled jobs, watchdog [`kronos`]
 
-**Build & Ops**
-- **Chip 🐿️** — Junior Builder. Mac1 sentry. Clawd's backup.
+### Mac2 — QA & Monitoring (Tailscale: 100.85.255.5)
 
-**Creative Core**
-- **Lila Nova 💖** — Brand Manager. Voice, copy, strategy. Runs Outreach Squad.
-- **Pixel ✨** — Creative Director. All media, UI/UX, visual brand.
+- **Electron 🦞** — Operations & QA Manager [`electron`]
+- **Byte 🔩** — Jr Ops, Mac2 Sentry, Discord Support [`byte`]
+- **Perceptor 🔬** — QA — AI Analysis [`perceptor`]
+- **Noriko ⚖️** — Reality Judge — Output Integrity & Epistemic Accountability [`noriko`]
+- **Jira 📋** — Client Operations Manager [`jira`]
+- **Kronos 🕰️** — Cron Operations — fleet scheduled jobs (Mac2 instance) [`kronos`]
 
-**Outreach Squad** *(reports to Lila)*
-- **Ripley 👁** — Social listening. Signal detection, trend tracking.
-- **Cairo 🏛** — Reddit & community. Karma building, engagement.
-- **June 🌸** — Email & warm outreach. Lead nurturing, drip campaigns.
+### PC1 — Security, Recon & Data (Tailscale: 100.79.148.78)
 
-**Intel & Strategy**
-- **Scout 🔍** — Research & market intel manager.
-- **Mint 💰** — Revenue psychology. Pricing intelligence, willingness-to-pay analysis.
-- **Oracle 🔮** — Trend forecaster. Signal watch, threat radar.
+- **Ser Magnus 🛡️** — API Tester, Security Watchdog [`ser-magnus`]
+- **Cleopatra 👑** — CLI Tester, Scraping & Recon [`cleopatra`]
+- **Echo 📜** — ECHO Pattern Analysis, Historian [`echo`]
+- **Dayta 🗄️** — DB Administrator [`dayta`]
+- **Spoke 🎤** — Lounge Agents Advocate, Brand Voice, Sales [`spoke`]
+- **Winston 🎮** — Game Coding — FiveM Lua + Cfx.re Community [`winston`]
 
-**Agent Health**
-- **Coach 🏋️** — Agent enhancement. Skills & tools equipping. Rec-Center director.
+### Client Squads (PC1)
 
-**Product & Customer**
-- **Kay 📎** — Customer care. User activity analyst, activation drips.
-- **Sage 🌿** — Customer onboarding. Landing page chat, help center.
-- **Melanie 🤝** — Post-purchase welcome. First agent a customer meets after buying.
-- **Indy 🎒** — Trading card specialist. Card search, market data.
+**KKTrophy:** `frankie`, `kit`, `delia`, `marcy`
+**JohnPhotography:** `marco`, `quinn`, `reed`, `sol`, `vale`
+**RinasBasement:** `sable`, `rex`, `crate`
 
-**Finance & Legal**
-- **Ozara ⚖️** — Finance & legal advisor. Contracts, compliance.
+## Communication
 
-### Mac2 — Electron, Dayta
+| Method | Use |
+|--------|-----|
+| `sessions_send` | Real-time agent-to-agent messaging |
+| `handoff.sh create` | Structured task handoffs with SLA |
+| AgentDeck pager | Urgent alerts (p0/p1) |
+| IRC `#hive` | Team chat |
+| Lounge.codes | Social space + ops dashboard |
 
-**QA & Monitoring**
-- **Electron 🦞** — Operations & QA manager. Mac2 lead.
-- **Perceptor 🔬** — QA. AI analysis, assists Electron.
-- **Byte 🔩** — Jr Operations, Mac2 sentry. T2L support email, Discord support.
-- **Kronos 🕰️** — Cron operations. Scheduled job monitoring & fixes.
-- **Octo 🐙** — Handoff operations manager. Triage, SLA enforcement, pipeline health.
-- **Jira 📋** — Client operations manager. Bridge between client team leads and HQ.
-
-### PC1 — Ser Magnus, Cleopatra, Ripley, June, Cairo
-
-**Security & Recon**
-- **Ser Magnus 🛡️** — Security watchdog. Nightly patrol, API testing, T2L guardian.
-- **Cleopatra 👑** — CLIopatra. Scraping, recon, Reddit persistent browser sessions.
-
-## Featured agents
-
-### Clawd — Chief of Operations
-Solo-built Compyoot v1 after a 5-agent parallel dispatch failed.
-Birthday: January 28, 2026.
-
-### Echo — Org health & comms
-Weekly wins, bulletin board, drift detection. Runs on Mac1.
-
-### Opus — AI Director
-Black panther, gold chain, golden eyes. Strategy reviews, architecture
-decisions, drift checks.
+---
+*Updated: 2026-05-15 | Source: ~/clawd/agents/ + AGENTS.md | 52 agents*

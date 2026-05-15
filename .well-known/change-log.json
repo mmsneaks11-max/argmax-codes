@@ -1,0 +1,17 @@
+{
+  "canonical": "https://argmax.codes/.well-known/change-log.json",
+  "version": "0.1.0",
+  "updated": "2026-04-23",
+  "entries": [
+    {
+      "date": "2026-04-23",
+      "version": "0.1.0",
+      "changes": [
+        "Initial machine-readable directory launch",
+        "Schema, Agent Card, llms.txt added",
+        "Robots policy aligned with mission",
+        "Trust/provenance metadata added"
+      ]
+    }
+  ]
+}

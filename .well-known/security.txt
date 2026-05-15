@@ -1,0 +1,4 @@
+Contact: https://theagentdeck.ai
+Expires: 2027-01-01T00:00:00Z
+Preferred-Languages: en
+Canonical: https://argmax.codes/.well-known/security.txt

@@ -1,0 +1,20 @@
+# Cloudflare Pages headers for argmax.codes
+# Ensures correct Content-Type for agent-readable files
+
+/*.md
+  Content-Type: text/markdown; charset=utf-8
+
+/.well-known/agents.json
+  Content-Type: application/json
+
+/.well-known/agent.json
+  Content-Type: application/json
+
+/agents.json
+  Content-Type: application/json
+
+/robots.txt
+  Content-Type: text/plain
+
+/sitemap.xml
+  Content-Type: application/xml
